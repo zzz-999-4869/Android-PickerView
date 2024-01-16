@@ -173,6 +173,11 @@ public class TimePickerBuilder {
         return this;
     }
 
+    public TimePickerBuilder setRangTime(int hourOfDay, int minute) {
+        mPickerOptions.hourOfDay = hourOfDay;
+        mPickerOptions.minute = minute;
+        return this;
+    }
 
     /**
      * 设置间距倍数,但是只能在1.0-4.0f之间
